@@ -1,0 +1,2 @@
+# SQL-Temelleri-Odevleri
+ 

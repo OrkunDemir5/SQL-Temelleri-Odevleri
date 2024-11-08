@@ -38,3 +38,25 @@ WHERE birthday = '1990-05-20';
 UPDATE employee
 SET name = 'Jane Smith', email = 'janesmith@example.com'
 WHERE id = 3;
+-------------------------------------------------------------------------------------------------------------------------
+-- 4.Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+
+--id sütununa göre satır silme
+DELETE FROM employee
+WHERE id = 1;
+
+--name sütununa göre satır silme
+DELETE FROM employee
+WHERE name = 'John Doe';
+
+--email sütununa göre satır silme
+DELETE FROM employee
+WHERE email = 'johndoe@example.com';
+
+--birthday sütununa göre satır silme
+DELETE FROM employee
+WHERE birthday = '1990-05-20';
+
+--id sütununa göre birden fazla koşul belirterek satır silme
+DELETE FROM employee
+WHERE id = 3 AND email = 'janesmith@example.com';
